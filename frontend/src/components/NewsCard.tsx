@@ -21,7 +21,12 @@ export default function NewsCard({ article }: Props) {
         className="w-full h-40 object-cover rounded-2xl"
         onError={(e) => (e.currentTarget.src = "/fallback-image.jpg")}
       />
-      <h2 className="text-md font-bold mt-2 line-clamp-2 leading-tight hover:underline hover:text-blue-600 cursor-pointer">{article.title}</h2>
+            {/* Title wrapped inside Link */}
+      <Link href={article.link} passHref>
+        <h2 className="text-md font-bold mt-2 line-clamp-2 leading-tight hover:underline hover:text-blue-600 cursor-pointer">
+          {article.title}
+        </h2>
+      </Link>
       <p className="text-xs text-gray-500 mt-1 leading-snug">{article.date}</p>
       <p className="text-sm text-gray-950 mt-1 line-clamp-4 leading-snug">{article.content}</p>
       
