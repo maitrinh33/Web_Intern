@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "6c54db9d-6e86-46be-a357-013e619ab7b4",
+		"name": "MyAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "39741943"
+	},
+	"item": [
+		{
+			"name": "User Authentication API\"",
+			"item": [
+				{
+					"name": "signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"John Doe\",\r\n    \"email\": \"john@example.com\",\r\n    \"password\": \"JohnDoe123!\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:5000/auth/signup"
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"john@example.com\",\r\n  \"password\": \"JohnDoe123!\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:5000/auth/login"
+					},
+					"response": []
+				},
+				{
+					"name": "forgot-pasword",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"john@example.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:5000/auth/forgot-password"
+					},
+					"response": []
+				},
+				{
+					"name": "reset-password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"token\": \"b0e621b0e34346bc98d76e71e690a1f78575badfdf6b8e778d53721a68e9ac28\",\r\n  \"newPassword\": \"JohnDoe987@\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:5000/auth/reset-password"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "News API",
+			"item": [
+				{
+					"name": "news",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:5000/api/news"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
