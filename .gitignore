@@ -1,0 +1,27 @@
+# Node.js (Backend)
+node_modules/
+npm-debug.log
+yarn-error.log
+.env         # Ignore actual environment variables
+*.log
+logs/
+dist/
+build/
+coverage/
+.DS_Store
+Thumbs.db
+
+# Next.js (Frontend)
+.next/
+out/
+node_modules/
+npm-debug.log
+yarn-error.log
+.env         # Ignore actual environment variables
+*.log
+.DS_Store
+Thumbs.db
+
+# IDE specific files
+.vscode/
+.idea/
