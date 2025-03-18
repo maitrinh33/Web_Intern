@@ -30,7 +30,7 @@ export default function NewsSection() {
   }, []);
 
   return (
-    <div className="md:px-16 p-4 my-10">
+    <div className="md:p-16 p-4">
       <h1 className="text-3xl text-blue-900 font-bold mb-6">AI News in the World</h1>
       
       {/* Swiper Slider */}

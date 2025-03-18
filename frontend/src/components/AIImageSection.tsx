@@ -1,9 +1,8 @@
-
 import Image from "next/image";
 
 const AIImageSection = () => {
   return (
-    <div className="relative w-[650px] h-[300px] sm:h-[600px] md:h-[700px]">
+    <div className="relative w-full h-[300px] sm:h-[400px] md:h-[650px]">
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image 
@@ -22,7 +21,7 @@ const AIImageSection = () => {
       </div>
 
       {/* AI Information */}
-      <p className="absolute top-[15%] lg:pr-48 left-6 right-6 sm:left-10 sm:right-20 text-gray-300 italic text-sm sm:text-base shadow-md rounded leading-loose">
+      <p className="absolute top-[15%] lg:pr-55 left-6 right-6 sm:left-10 sm:right-20 text-gray-300 italic text-sm sm:text-base shadow-md rounded leading-loose">
         Build an intelligent business using pre-built AI and a comprehensive portfolio of cloud platform services
       </p>
 

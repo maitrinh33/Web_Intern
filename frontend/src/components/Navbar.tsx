@@ -39,7 +39,7 @@ const Navbar = () => {
       {/* MOBILE & TABLET */}
       <div className="h-full flex items-center justify-between lg:hidden">
         <Link href="/">
-          <div className="md:text-5xl text-3xl text-gradient-to-r from-blue-950 to-indigo-900 font-extrabold tracking-wide">
+          <div className="md:text-5xl text-3xl nav-font font-extrabold tracking-wide">
             HEKATE
           </div>
         </Link>
@@ -58,7 +58,7 @@ const Navbar = () => {
               <div className="relative">
                 <button
                   onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                  className="flex items-center bg-blue-900 text-white px-6 py-3 rounded-full hover:bg-blue-900 transition duration-200"
+                  className="flex items-center bg-blue-900 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition duration-200"
                 >
                   <span className="mr-2">{auth.userEmail}</span>
                   <svg
@@ -78,12 +78,12 @@ const Navbar = () => {
                 </button>
 
                 {isDropdownOpen && (
-                  <div className="absolute right-0 mt-1 w-30 bg-slate-900 rounded-lg shadow-lg overflow-hidden z-50">
+                  <div className="absolute right-0 w-30 mt-0.5 bg-blue-400 rounded-full shadow-lg overflow-hidden z-50">
                     <button
                       onClick={handleLogout}
-                      className="w-full text-right px-5 py-2 text-white hover:bg-blue-950 cursor-pointer"
+                      className="w-full text-right px-5 py-2 text-white hover:bg-blue-500 cursor-pointer"
                     >
-                      Logout ↪️
+                      Logout ➾
                     </button>
                   </div>
                 )}

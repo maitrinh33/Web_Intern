@@ -59,7 +59,7 @@ export default function LoginPage() {
             <div className="w-40 md:w-60 h-6 md:h-8 bg-indigo-200 rounded absolute left-1/2 transform -translate-x-1/2 top-8"></div>
           </div>
 
-          {/* Centering Inputs */}
+          {/* Inputs */}
           <div className="mt-18 flex flex-col items-center">
             {/* Email Input */}
             <input
@@ -114,8 +114,8 @@ export default function LoginPage() {
           {success && <Notification type="success" message={success} />}
         </div>
 
-        {/* Right - AI Image & Info (Hidden on small screens) */}
-        <div className="hidden md:block">
+        {/* Right - AI Image & Info */}
+        <div className="relative justify-self-end w-full md:w-1/2 h-[300px] sm:h-[400px] md:h-[500px] lg:h-[650px] hidden md:block">
           <AIImageSection />
         </div>
       </div>
